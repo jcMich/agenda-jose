@@ -6,9 +6,31 @@
 <body>
 <a href="{% url 'add_contact' %}"> Agregar contacto</a>
 <hr/>
+
 {% for contacto in contactos %}
     <a href="{% url 'contact_detail' contacto.pk %}">{{ contacto.nombre }}</a>
     <br/>
+{% endfor %}
+<hr>
+
+<a href="{% url 'add_group' %}">Agregar Grupo</a>
+<a href="{% url 'delete' %}"> Borrar Grupo</a>
+<hr>
+
+{% for grupo in grupos %}
+	<a href="{% url 'group_detail' grupo.pk %}">{{ grupo.nombre }}</a>   
+	<br/>
+{% endfor %}
+
+
+<hr>
+
+<a href="{% url 'add_color' %}">Agregar Color</a>
+<hr>
+
+{% for color in colores %}
+	<a href="{% url 'color_detail' colores.pk %}">{{ color.color }}</a>   
+	<br/>
 {% endfor %}
 
 </body>
