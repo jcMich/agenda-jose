@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact detail</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>nombre</td>
+        <td>{{ contacto.nombre }}</td>
+    </tr>
+    <tr>
+        <td>telefono</td>
+        <td>{{ contacto.telefono }}</td>
+    </tr>
+    <tr>
+        <td>direccion</td>
+        <td>{{ contacto.direccion }}</td>
+    </tr>
+    <tr>
+        <td>colores</td>
+        <td>{{ contacto.colores_favoritos.all }}</td>
+    </tr>
+</table>
+
+<a href="{% url 'index'%}">Regresar</a>
+</body>
+</html>
