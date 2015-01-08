@@ -29,7 +29,7 @@
 <hr>
 
 {% for color in colores %}
-	<a href="{% url 'color_detail' colores.pk %}">{{ color.color }}</a>   
+	<a href="{% url 'color_detail' color.pk %}">{{ color.color }}</a>   
 	<br/>
 {% endfor %}
 

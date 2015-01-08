@@ -9,6 +9,6 @@ urlpatterns = patterns('agenda.views',
     url(r'^ShowDelGrupo/$','delete',name='delete'),
     url(r'^DelGrupo(?P<pk>.*)/$','delete_group',name='delete_group'),
     url(r'^addColor/$','add_color',name='add_color'),
-    url(r'^Color(?P<pk>.*)/$','color_detail',name='color_detail'),
+    url(r'^Color/(?P<pk>.*)/$','color_detail',name='color_detail'),
 
 )

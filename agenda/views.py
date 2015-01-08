@@ -73,7 +73,7 @@ def add_color(request):
 
 
 def color_detail(request, pk):
-    color = Color.objects.get(pk=pk)
+    color = Colores.objects.get(pk=pk)
     return render(request,'color_detail.html', {'colores': color})
 
 	
