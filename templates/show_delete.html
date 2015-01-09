@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>Delete page</title>
+</head>
+<body>
+{% for g in grupo %}
+    <a href="{% url 'delete_group' g.pk %}">{{ g.nombre }}</a>
+    <br/>
+{% endfor %}
+
+<a href="{% url 'index' %}">Regresar</a>
+</body>
+<html>

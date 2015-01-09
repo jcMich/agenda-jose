@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Group detail</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>nombre</td>
+        <td>{{ grupo.nombre }}</td>
+    </tr>
+    <tr>
+        <td>Descripcion</td>
+        <td>{{ grupo.descripcion }}</td>
+    </tr>
+</table>
+
+<a href="{% url 'index'%}">Regresar</a>
+</body>
+</html>
